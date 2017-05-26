@@ -8,6 +8,4 @@ categories: init
 Full Stack Dude welcomes you!
 ===================
 
-
-
 hi
