@@ -16,7 +16,7 @@ before_script:
   - gem install jekyll
 
 script:
-  - jekyll build
+  - bundle exec jekyll build
 
 after_success:
   - firebase deploy --token=${FIREBASE_API_TOKEN}
