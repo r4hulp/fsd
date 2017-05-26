@@ -8,6 +8,7 @@ branches:
 
 before_script:
   - rvm reinstall ruby-head --binary
+  - bundle install --path vendor/cache
   - npm install -g firebase-tools
   - npm install ruby
   - npm install -g gulp
