@@ -8,8 +8,8 @@ branches:
 
 
 before_install:
-  - rvm install 2.1
-  - rvm use 2.1
+  - rvm install 2.2
+  - rvm use 2.2
   - . $HOME/.nvm/nvm.sh && nvm install 6.1 && nvm use 6.1
   - gem install bundler
   - bundle check || bundle install
@@ -21,7 +21,8 @@ install:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script: 
-  - bundle exec jekyll build
+  - set -e
+  - jekyll build
 
 after_success:
   - firebase deploy --token $FIREBASE_API_TOKEN
