@@ -7,6 +7,13 @@ branches:
     - master
 
 
+notifications:
+  email:
+    on_success: never
+    on_failure : change 
+
+
+
 before_install:
   - rvm install 2.2
   - rvm use 2.2
